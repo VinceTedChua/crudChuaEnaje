@@ -1,0 +1,290 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url("el.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(39, 39, 39, 0.4);
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 50px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
+}
+
+.nav-logo p {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nav-menu ul {
+    display: flex;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+}
+
+.nav-menu ul li .link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 0px;
+    margin: 0 25px;
+}
+
+.link:hover, .active {
+    border-bottom: 2px solid #fff;
+}
+
+.nav-button .btn {
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#registerBtn {
+    margin-left: 15px;
+}
+
+.btn.white-btn {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.btn.white-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.nav-menu-btn {
+    display: none;
+}
+
+.nav-menu-btn i{
+    font-size: 25px;
+    color: #ffff;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+/* Further Compact Design Refinements */
+.form-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 715px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.login-container {
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.register-container {
+    position: absolute;
+    right: -520px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.top {
+    text-align: center;
+    color: #fff;
+    font-size: small;
+    padding: 0px 0;
+    margin-bottom: 0px; /* Further reduce space below "Have an account?" */
+}
+
+.top span {
+    display: block;
+    justify-content: center;
+    padding: 0px 0;
+}
+
+.top span a {
+    font-weight: 500;
+    color: #fff;
+    margin-left: 0px;
+}
+
+header {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 0 0px 0;
+    margin-top: 0px; /* Bring the "Sign Up" header closer */
+    margin-bottom: 0px; /* Reduce space below the header */
+}
+
+/* Gap to sa mga names*/
+.two-forms {
+    display: flex;
+    gap: 40px;
+}
+
+.input-field {
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 35px;
+    width: 100%;
+    padding: 0 0px 0 55px; /* text space */
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+
+.input-field:hover, .input-field:focus {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.input-box {
+    /* space sa image */
+    margin-bottom:4px; /* Reduce space between input fields */
+    width: 100%; /* Ensure the input boxes take full width of the container */
+    color:#fff
+}
+
+
+
+/* icon sa mga input boxes (prof chu chu)*/
+.input-box i {
+    position: relative;
+    top: -28px;
+    left: 20px;
+    color: #fff;
+}
+
+.submit {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 35px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-top: 0px; /* Reduce space above the Register button */
+    margin-bottom: 0px; /* Reduce space below the button */
+}
+
+.submit:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.two-col {
+    margin-top: auto; /* Compact space above "Remember Me" and "Terms & Conditions" */
+    justify-content: space-between; /* Ensure they align neatly */
+    gap: auto; /* Space out the columns a little */
+    flex-wrap: wrap; /* Allow elements to stack if needed */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.two-col .one {
+    display: flex;
+    gap: auto;
+}
+
+.two-col .two {
+    text-align: center;
+}
+
+.two label a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.two label a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 540px) {
+    .form-box {
+        padding: 0px 50px; /* Compact padding for smaller screens */
+    }
+
+    .register-container .two-forms {
+        flex-direction: column;
+        gap: 0px; /* Further reduce gap between name fields */
+    }
+
+    .submit {
+        margin-top: 0px; /* Reduce space on smaller screens */
+    }
+
+    .two-col {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px; /* Reduce space between "Remember Me" and "Terms & Conditions" */
+        margin-top: 200px; /* Slight space to avoid crowding */
+    }
+
+    .two-col .one, .two-col .two {
+        text-align: center;
+        width: 100%; /* Ensure they occupy full width when stacked */
+    }
+
+    .account-list h2 {
+        color: white; /* Change text color to white */
+        text-align: center; /* Center the heading */
+    }
+    
+}
